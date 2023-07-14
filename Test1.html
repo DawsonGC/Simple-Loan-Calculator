@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Loan Calculator</title>
+  <script src="script.js"></script>
+</head>
+<body>
+  <h1>Loan Calculator</h1>
+
+  <p>
+  This calculator has three functions:
+  <ol>
+    <li>How Many Months To Pay Off A Loan. Input all three fields.</li>
+    <li>Maximum Loan. Input an interest rate and a monthly payment.</li>
+    <li>Minimum Monthly Payments. Input an interest rate and loan amount.</li>
+  </ol>
+  </p>
+
+  <form onsubmit="calculateLoan(event)">
+    <label for="loanAmount">Loan Amount:</label>
+    <input type="text" id="loanAmount"><br>
+
+    <label for="interestRate">Interest Rate (%):</label>
+    <input type="text" id="interestRate"><br>
+
+    <label for="monthlyPayment">Monthly Payment:</label>
+    <input type="text" id="monthlyPayment"><br>
+
+    <input type="submit" value="Calculate">
+  </form>
+
+  <h2>Results:</h2>
+  <p id="result"></p>
+</body>
+</html>

@@ -8,20 +8,51 @@
   body {
     background-color: black;
     color: white;
+    text-align: center;
+    display: grid;
+    place-items: center;
+  }
+
+  ol {
+    background-color: powderblue;
+    color: black;
+    border-radius: 10px;
+    padding: 10px;
+    padding-left: 26px;
+  }
+
+  form {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  label {
+    grid-column: 1;
+  }
+
+  input {
+    grid-column: 2;
+  }
+
+  .result {
+    background-color: navy;
+    border-radius: 10px;
+    padding: 10px;
   }
 </style>
 </head>
 <body>
   <h1>Loan Calculator</h1>
-
   <p>
   This calculator has three functions:
+  </p>
   <ol>
     <li>How Many Months To Pay Off A Loan. Input all three fields.</li>
     <li>Maximum Loan. Input an interest rate and a monthly payment.</li>
     <li>Minimum Monthly Payments. Input an interest rate and loan amount.</li>
   </ol>
-  </p>
 
   <form onsubmit="calculateLoan(event)">
     <label for="loanAmount">Loan Amount:</label>
@@ -37,6 +68,6 @@
   </form>
 
   <h2>Results:</h2>
-  <p id="result"></p>
+  <p id="result" class="result"></p>
 </body>
 </html>

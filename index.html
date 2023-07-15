@@ -21,7 +21,7 @@
     padding-left: 26px;
   }
 
-  form {
+  .form-entry {
     display: grid;
     justify-items: center;
     align-items: center;
@@ -55,6 +55,7 @@
   </ol>
 
   <form onsubmit="calculateLoan(event)">
+    <div class="form-entry">
     <label for="loanAmount">Loan Amount:</label>
     <input type="text" id="loanAmount"><br>
 
@@ -63,6 +64,7 @@
 
     <label for="monthlyPayment">Monthly Payment:</label>
     <input type="text" id="monthlyPayment"><br>
+    </div>
 
     <input type="submit" value="Calculate">
   </form>
